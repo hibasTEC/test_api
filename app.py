@@ -69,7 +69,7 @@ else:
                                 with cols[idx]:
                                     if "cardPhotos" in hotel and hotel["cardPhotos"]:
                                         image_url = hotel["cardPhotos"][0]["sizes"]["urlTemplate"].replace("{width}", "300").replace("{height}", "200")
-                                        st.image(image_url, use_column_width=True)
+                                        st.image(image_url, use_container_width=True)
                                     else:
                                         st.text("Image non disponible")
 
